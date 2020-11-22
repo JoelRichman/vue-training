@@ -28,24 +28,27 @@ app.component('app-song-list', {
     }
   },
   template: `
-    <div class="filter-container">
-      Filter: <input type="text" v-model="filter" />  {{ filter }}
+    <div style="width: 100%">
+      <app-song-filter
+        :filterText="filter"
+        @filterChanged="filter = $event">
+      </app-song-filter>
+      <table class="table">
+        <thead>
+          <tr>
+            <td>Title</td>
+            <td>Artist</td>
+            <td>Length</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="song in filteredSongs" :key="id" @click="filter" :class="{ active: song.id === selectedSongId }">
+            <td>{{ song.title }}</td>
+            <td>{{ song.artist }}</td>
+            <td>{{ song.length }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <table class="table">
-      <thead>
-        <tr>
-          <td>Title</td>
-          <td>Artist</td>
-          <td>Length</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="song in filteredSongs" :key="id" @click="selectSong(song)" :class="{ active: song.id === selectedSongId }">
-          <td>{{ song.title }}</td>
-          <td>{{ song.artist }}</td>
-          <td>{{ song.length }}</td>
-        </tr>
-      </tbody>
-    </table>
   `
 })
