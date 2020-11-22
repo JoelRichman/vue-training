@@ -1,12 +1,16 @@
 app.component('app-song-filter', {
   name: 'appSongFilter',
-  props: ['filterText'],
+  computed: {
+    filterText() {
+      return this.$store.getters.filter;
+    }
+  },
   template: `
     <div class="filter-container">
       Filter:
       <input type="text"
         :value="filterText"
-        @input="$emit('filterChanged', $event.target.value)"
+        @input="$store.commit('songs_setFilter', $event.target.value)"
       />
     </div>
   `

@@ -12,8 +12,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.js" integrity="sha512-bYkaBWaFtfPIMYt9+CX/4DWgfrjcHinjerNYxQmQx1VM76eUsPPKZa5zWV8KksVkBF/DaHSADCwil2J5Uq2ctA==" crossorigin="anonymous"></script>
   </head>
   <body id="app">
-    <app-header></app-header>
-    <app-song-list></app-song-list>
+    <app-header id="appHeader"></app-header>
+    <app-song-filter id="songFilter"></app-song-filter>
+    <app-song-list id="songList"></app-song-list>
   </body>
   <script type="text/javascript">
     const app = Vue.createApp({});
