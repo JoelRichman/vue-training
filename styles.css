@@ -3,3 +3,11 @@ header {
   padding: 20px;
   background-color: #eee;
 }
+
+tbody > tr {
+  cursor: pointer;
+}
+
+tbody > tr.active {
+  background-color: lightblue;
+}

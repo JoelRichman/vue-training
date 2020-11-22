@@ -9,24 +9,12 @@
   </head>
   <body id="app">
     <app-header></app-header>
+    <app-song-list></app-song-list>
   </body>
-  <script type="text/javascript">
-    const app = Vue.createApp({});
+  <script type="text/javascript">const app = Vue.createApp({});</script>
+  <script src="app/header.component.js"></script>
+  <script src="app/song-list.component.js"></script>
+  <script type="text/javascript">app.mount('#app');</script>
 
-    app.component('app-header', {
-      name: 'appHeader',
-      data() {
-        return {
-          title: 'Music Database'
-        }
-      },
-      template: `
-        <header>
-          <h1>{{ title }}</h1>
-        </header>
-      `
-    });
-
-    app.mount('#app');
   </script>
 </html>
