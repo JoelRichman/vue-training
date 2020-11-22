@@ -1,9 +1,32 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.2/vue.global.prod.js" integrity="sha512-M8VjsuCj1iBzrwKloFNjvQBmFXT2oF0MWExoLGpQT2nEx5tq7CP+BhWGJdczT1LoWAhyqHh+LJ6ihHSVGyclHw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/4.0.0-rc.1/vuex.global.min.js" integrity="sha512-eslIOb0ySVXhhyGkne1HLfBpJ0g7aOu32dKJl/3kWtttF2X2nbalM2wCo/zKrHuVy0OMWyYJiIazmt1xzbFXJg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
   </head>
-  <body>
-    <h1>It Works!</h1>
+  <body id="app">
+    <app-header></app-header>
   </body>
+  <script type="text/javascript">
+    const app = Vue.createApp({});
+
+    app.component('app-header', {
+      name: 'appHeader',
+      data() {
+        return {
+          title: 'Music Database'
+        }
+      },
+      template: `
+        <header>
+          <h1>{{ title }}</h1>
+        </header>
+      `
+    });
+
+    app.mount('#app');
+  </script>
 </html>
