@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Where the Streets Have No Name",
+    "artist": "U2",
+    "length": 3.5,
+    "genre": "Rock",
+    "album": "Joshua Tree",
+    "description": "'Where the Streets Have No Name' is a song by Irish Rock band U2. It is the opening track from their 1987 album The Joshua Tree and was released as the album's third single in August 1987. The song's hook is a repeating guitar arpeggio using a delay effect, played during the song's introduction and again at the end. Lead vocalist Bono wrote the lyrics in response to the notion that it is possible to identify a person's religion and income based on the street on which they lived, particularly in Belfast. During the band's difficulties recording the song, producer Brian Eno considered erasing the song's tapes to have them start from scratch."
+  },
+  {
+    "id": 2,
+    "title": "I Still Haven't Found What I'm Looking For",
+    "artist": "U2",
+    "length": 4.0,
+    "genre": "Rock",
+    "album": "Joshua Tree",
+    "description": "'I Still Haven't Found What I'm Looking For' is a song by Irish Rock band U2. It is the second track from their 1987 album The Joshua Tree and was released as the album's second single in May 1987. The song was a hit, becoming the band's second consecutive number-one single on the US Billboard Hot 100 while peaking at number six on the UK Singles Chart."
+  },
+  {
+    "id": 3,
+    "title": "With or Without You",
+    "artist": "U2",
+    "length": 3.5,
+    "genre": "Rock",
+    "album": "Joshua Tree",
+    "description": "'With or Without You' is a song by Irish Rock band U2. It is the third track on their fifth studio album, The Joshua Tree (1987), and was released as the album's lead single on 16 March 1987. The song was the group's most successful single at the time, becoming their first number-one hit in both the United States and Canada by topping the Billboard Hot 100 for three weeks and the RPM national singles chart for one week, with a further three weeks at number two."
+  },
+  {
+    "id": 4,
+    "title": "Running to Stand Still",
+    "artist": "U2",
+    "length": 3.75,
+    "genre": "Rock",
+    "album": "Joshua Tree",
+    "description": "'Running to Stand Still' is a song by Rock band U2, and it is the fifth track from their 1987 album, The Joshua Tree. A slow ballad based on piano and guitar, it describes a heroin-addicted couple living in Dublin's Ballymun flats; the towers have since become associated with the song. Though a lot of time was dedicated to the lyrics, the music was improvised with co-producer Daniel Lanois during a recording session for the album."
+  },
+  {
+    "id": 5,
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "length": 3.75,
+    "genre": "Grunge",
+    "album": "Nevermind",
+    "description": ""
+  },
+  {
+    "id": 6,
+    "title": "Come as You Are",
+    "artist": "Nirvana",
+    "length": 3.5,
+    "genre": "Grunge",
+    "album": "Nevermind",
+    "description": ""
+  },
+  {
+    "id": 7,
+    "title": "Stayin Alive",
+    "artist": "Bee Gees",
+    "length": 3.5,
+    "genre": "Disco",
+    "album": "Saturday Night Fever",
+    "description": ""
+  },
+  {
+    "id": 8,
+    "title": "Night Fever",
+    "artist": "Bee Gees",
+    "length": 3,
+    "genre": "Grunge",
+    "album": "Saturday Night Fever",
+    "description": ""
+  }
+]
