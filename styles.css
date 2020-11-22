@@ -1,7 +1,8 @@
 header {
   width: 100%;
   padding: 20px;
-  background-color: #eee;
+  background-color: darkblue;
+  color: white;
 }
 
 tbody > tr {
@@ -10,4 +11,15 @@ tbody > tr {
 
 tbody > tr.active {
   background-color: lightblue;
+}
+
+thead > tr {
+  background-color: #eee;
+}
+
+.filter-container {
+  height: 60px;
+  width: 100%;
+  background-color: lightblue;
+  padding: 15px;
 }
