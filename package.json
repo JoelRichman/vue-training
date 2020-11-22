@@ -1,0 +1,16 @@
+{
+  "name": "vue-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "author": "Joel Richman",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.13",
+    "lite-server": "^2.6.1"
+  }
+}
