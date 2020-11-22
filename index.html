@@ -15,9 +15,16 @@
     <app-header></app-header>
     <app-song-list></app-song-list>
   </body>
-  <script type="text/javascript">const app = Vue.createApp({});</script>
+  <script type="text/javascript">
+    const app = Vue.createApp({});
+    const store = new Vuex.Store({ state: { } });
+  </script>
   <script src="app/header.component.js"></script>
   <script src="app/song-list-filter.component.js"></script>
   <script src="app/song-list.component.js"></script>
-  <script type="text/javascript">app.mount('#app');</script>
+  <script src="app/song-list.state.js"></script>
+  <script type="text/javascript">
+    app.use(store);
+    app.mount('#app');
+  </script>
 </html>

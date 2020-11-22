@@ -2,7 +2,6 @@ app.component('app-song-list', {
   name: 'songList',
   data() {
     return {
-      songs: [],
       selectedSongId: 0,
       filter: ''
     }
@@ -13,6 +12,9 @@ app.component('app-song-list', {
     }
   },
   computed: {
+    songs() {
+      return this.$store.getters.songList;
+    },
     filteredSongs() {
       if (this.filter) {
         const lcFilter = this.filter.toLowerCase();
@@ -25,8 +27,7 @@ app.component('app-song-list', {
     }
   },
   mounted() {
-    axios({ method: 'get', url: '/assets/songs.json' })
-    .then(response => this.songs = response.data)
+    this.$store.dispatch('songs_LoadSongs');
   },
   template: `
     <div style="width: 100%">
